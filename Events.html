@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Demo for jquery</title>
+    <script
+    src="https://code.jquery.com/jquery-3.6.0.js"
+    integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk="
+    crossorigin="anonymous"></script>
+    <style>
+    #box{
+        padding :20px;
+        border :2px solid black;
+    }
+
+    #list{
+        padding: 20px;
+        border: 3px solid gold;
+        background-color: aqua;
+        color: black;
+
+    }
+
+    </style>
+</head>
+<body>
+
+
+
+ <h1>This is an demo</h1>
+
+ <div id="box" class="boxclass">
+    <h3>This is an box</h3>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste tempore provident corrupti ipsam, dolore dolor veniam consequatur soluta labore. Esse doloremque voluptatibus fugiat delectus eos molestiae saepe corporis, sit ducimus!</p>
+</div>
+<br>
+
+<div id="list">
+    <ul>
+        <li>Orange</li>
+        <li>apple</li>
+        <li>mango</li>
+        <li>grapes</li>
+
+    </ul>
+
+</div>
+
+<script>
+
+        $(document).ready(function(){
+            $("#list").click(function(){
+                $("#list").css("background-color","pink");
+
+            });
+
+            $("#list").dblclick(function(){
+                $("#list").css("background-color","gold" ,"border");
+            });
+
+            $("#list").contextmenu(function()
+            {
+                $("#list").css("background-color" , "green" "color","white")
+            })
+
+        });
+  
+</script>
+    
+
+</body>
+</html>

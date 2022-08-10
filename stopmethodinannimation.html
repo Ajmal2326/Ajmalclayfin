@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <script
+    src="https://code.jquery.com/jquery-3.6.0.js"
+    integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk="
+    crossorigin="anonymous"></script>
+
+    <style>
+         #box{
+            padding: 10px;
+            border: 3px solid blueviolet;
+            width: 200px;
+            height: 200px;
+            position: relative;
+           
+        }
+    </style>
+    
+</head>
+<body>
+    <div id="box">
+        <h2 id="heading">This is an css class method</h2>
+    </div>
+    <br>
+    <button id="btn">start</button>
+    <button id="btn1">stop</button>
+
+    <script>
+           $(document).ready(function(){
+            $("#btn").click(function(){
+                $("#box").animate({left : "150px"},2000);  
+                $("#box").animate({top : "150px"  });   
+                $("#box").animate({left : "350px"  });         
+               
+            });
+            $("#btn1").click(function(){
+                $("#box").stop(true);
+            })
+           }); 
+
+    </script>
+</body>
+</html>
