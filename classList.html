@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <script
+    src="https://code.jquery.com/jquery-3.6.0.js"
+    integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk="
+    crossorigin="anonymous"></script>
+
+    <style>
+        #firstdiv{
+            padding: 20px;
+            border: 3px solid blue;
+            color :red;
+            width: 150px;
+        }
+
+        .xyz{
+            background-color: aqua;
+        }
+
+        .pql{
+            background-color: brown;
+        }
+    </style>
+
+</head>
+<body>
+    
+    <div id="firstdiv" class="first" ">
+
+        <h3 class="first"> This is an an firs h3 line </h3>
+        <p class="first">Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni tempore doloribus quisquam, sint, omnis non iure porro ullam assumenda neque consectetur nulla quia enim quibusdam, rerum deleniti voluptas a culpa!</p>
+    </div>
+
+    <button id="btn">clickme</button>
+
+    <script>
+      document.querySelector("#btn").addEventListener("click", fun)
+
+      function fun(){
+        document.querySelector("h3").classList.add("xyz");
+      }
+
+    </script>
+
+  <!-- dout -->
+<!-- <script>
+
+    document.querySelector("#btn").addEventListener("click",sos(){
+        document.querySelector("#firstdiv").classList.add("pql");
+    });
+</script> -->
+
+
+</body>
+</html>

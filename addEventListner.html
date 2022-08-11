@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script
+    src="https://code.jquery.com/jquery-3.6.0.js"
+    integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk="
+    crossorigin="anonymous"></script>
+
+    <style>
+        #box{
+            padding: 20px;
+            border: 2px solid blue;
+            width: 300px;
+        }
+    </style>
+
+</head>
+<body>
+     <div id="box">
+
+            <h1 id="heading" class="abc">This is my javascript demo page</h1>
+        <p id="para">Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia accusamus maiores distinctio id consectetur! Expedita facere ex maiores sapiente, architecto, tempora a, modi necessitatibus placeat voluptate qui reiciendis aut ducimus!
+        </p>
+        <button id="btn" type="button" onclick="document.getElementById('heading').style.background='blue'">clickme</button>
+        </div>
+<!-- 
+        //if we dont want to write the code in direct on html so we using addEventLisner, it is helpful to add 
+        the function without counfusion  -->
+    <!-- <script>
+        document.querySelector("#btn").addEventListener("click",abc);
+        function abc(){
+            document.querySelector("#heading").style.background="green";
+        }
+
+    </script> -->
+</body>
+</html>
