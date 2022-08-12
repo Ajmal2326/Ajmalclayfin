@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+         .c1{
+            background-color: aqua;
+            color: black;
+            text-align: center;
+            font-size: 30px;
+            display: none;
+        }
+
+        @media(max-width:300px){
+            #i11{
+                background-color: blue;
+                color: black;
+                display: block;
+            }
+        }
+        @media(min-width:300px) and(max-width:500px){
+            #i12{
+                background-color: gray;
+                color: black;
+                display: block;
+            }
+        }
+        @media(min-width:500px) and (max-width:750px){
+            #i13{
+                background-color: greenyellow;
+                color: black;
+                display: block;
+            }
+        }
+        @media(min-width:750px){
+            #i14{
+                background-color: rgb(255, 0, 21);
+                color: black;
+                display: block;
+            }
+        }
+    </style>
+   
+</head>
+<body>
+    <div class="c1" id="i11">small</div>
+    <div class="c1" id="i12">average</div>
+    <div class="c1" id="i13">big</div>
+    <div class="c1" id="i14">verybig</div>
+
+</body>
+</html>
