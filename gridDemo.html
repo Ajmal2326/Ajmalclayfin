@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+           #container{
+            background-color: lightblue;
+            width: 500px;
+            margin: 70px 0 0 30px;
+
+            display: grid;
+
+            grid-template-columns: 150px 130px auto;
+            grid-template-rows: 60px 80px  ;
+            
+
+            grid-gap: 20px 20px;
+
+
+        }
+        .item1{
+            background-color: aqua;
+            grid-row-start: 2;
+            grid-row-end: 3;
+            grid-column-start: 3;
+            grid-column-end: 4;
+        }
+        
+        .item2{
+            background-color: red;
+        }
+        
+        .item3{
+            background-color: rebeccapurple;
+        }
+        
+        .item4{
+            background-color: gray;
+        }
+        
+        .item5{
+            background-color: green;
+            grid-row-start: 1;
+            grid-row-end: 2;
+            grid-column-start: 3;
+            grid-column-end: 4;
+        }
+        
+        .item6{
+            background-color: yellow;
+            grid-row-start: 1;
+            grid-row-end: 2;
+            grid-column-start: 2;
+            grid-column-end: 3;
+        }
+    </style>
+    
+</head>
+<body>
+    <div id="container">
+
+        <div class="item item1">first</div>
+        <div class="item item2">second</div>
+        <div class="item item3">third</div>
+        <div class="item item4">forth</div>
+        <div class="item item5">fifth</div>
+        <div class="item item6">sixth</div>
+    </div>
+</body>
+</html>

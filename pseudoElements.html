@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+
+        p::first-letter{
+            color: blue;
+            background-color: black;
+        }
+        p::first-line{
+            color: aqua;
+            background-color: blueviolet;
+        }
+
+        ::selection{
+            background-color: yellow;
+            color: black;
+        }
+
+        ::placeholder{
+            font-size: large;
+            color: brown;
+
+        }
+
+        p::before{
+            content: "hello this is my first actual page";
+            display: block;
+            color: back;
+            background-color: yellow;
+            font-size: large;
+        }
+        p::after{
+            content: "This is myactula last page";
+            display: block;
+            color: brown;
+            background-color:green;
+            font-size: small;
+        }
+    </style>
+</head>
+<body>
+    <div id="abc">
+
+        <p>
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Omnis nostrum repellendus reprehenderit nemo delectus magnam, repudiandae similique incidunt ea debitis voluptatibus eius dolorem quaerat deserunt maiores adipisci aspernatur illum accusantium!
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque, vitae tempora! Excepturi ipsam quam tenetur, incidunt perferendis nam earum qui facilis, nesciunt consectetur corrupti officiis! Accusantium voluptatem tempora iusto eveniet!
+
+        </p>
+        <ol>
+            <li>first li</li>
+            <li>second li</li>
+            <li>third li</li>
+            <li>fourth li</li>
+            <li>fifth li</li>
+        </ol>
+
+    </div>
+    <div id="abc">
+        <p>
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dignissimos, eius reprehenderit et natus eos illum est nesciunt? Doloremque sapiente deleniti a ab asperiores expedita quaerat praesentium, repellendus beatae provident ipsa!
+            Vitae sequi saepe, aliquid asperiores quasi eligendi molestiae tempora, voluptas, quis sit beatae eveniet esse optio neque reprehenderit velit! Similique, nostrum provident suscipit at voluptatibus eos maxime quos eveniet reiciendis.
+            Asperiores saepe sunt aperiam, odit molestias fuga velit maiores minima similique sed ipsum facilis ut, ab delectus quidem debitis eaque consequuntur excepturi vel iusto labore commodi. At dolor inventore veritatis?
+            Aperiam corrupti dolorem, adipisci architecto voluptatum hic? Enim atque quam suscipit architecto dolores quod voluptatum nihil sint eos, sunt earum nam aliquid praesentium laboriosam dignissimos laborum tenetur sapiente mollitia ipsa?
+            Eveniet obcaecati cupiditate nobis amet impedit tempora quae a, vero eaque explicabo repudiandae perspiciatis, ab voluptatem doloremque consectetur itaque nostrum quam sunt voluptatum nesciunt excepturi saepe sapiente soluta libero? Iste.
+        </p>
+    </div>
+    <div id="abc">
+        <label for="">Name</label>
+        <input type="text " placeholder="Enter your name">
+        <br>
+
+        <label for="">Enter your main id</label>
+        <input type="email" placeholder="Enter your mail id">
+        <br>
+    </div>
+</body>
+</html>
