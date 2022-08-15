@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web Worker</title>
+</head>
+<body>
+    <button id="color">Changecolor</button>
+    <button id="calculation"> calculation</button>
+    
+    <script>
+        const worker=new Worker('D:\web Technology\clayfin\jQuery\day5\workers.js');
+        const bgcolor=document.querySelector("#color")
+        bgcolor.addEventListener("click", event=>{
+            if(document.body.style.background!=="green")
+                document.body.style.background="green";
+            else
+                document.body.style.background="yellow";
+        });
+
+        const cal=document.querySelector("#calculation")
+        cal.addEventListener("click",fun)
+
+        function fun(){
+            // let sum=0;
+            // for(let i=0;i<1000000000;i++)
+            // {
+            //     sum+=i;
+            // }
+            // alert(`The final sum is ${sum}`);
+            worker.postMessage('hello ');
+        };
+
+        worker.onmessage=function(message){
+           alert(`The final sum is ${sum}`);   
+        }
+           
+    
+    </script>
+</body>
+</html>
