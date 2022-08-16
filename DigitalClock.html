@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <script
+    src="https://code.jquery.com/jquery-3.6.0.min.js"
+    integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+    crossorigin="anonymous"></script>
+    <style>
+        .coloring{
+            
+            color: rgb(248, 241, 241);
+            font-size: 70px;
+            margin-top: 20%;
+            margin-left: 40%;
+            padding: 0px 10px 0px 10px;
+        }
+      body{
+        background-color: black;
+      }
+        
+    </style>
+</head>
+<body >
+    
+    <div id="MyClock" class="coloring"></div>
+
+    <Script type="text/javascript">
+        function showTime(){
+            var date=new Date();
+            var h=date.getHours();
+            var m=date.getMinutes();
+            var s=date.getSeconds();
+            var session="AM";
+
+            if(h==0){
+                h=12;
+            }
+            if(h>12){
+                h=h-12;
+                session="PM";
+            }
+            h=(h<10)? "0"+h:h;
+            m=(m<10)? "0"+m:m
+            s=(s<10)? "0"+s:s;
+            var time= h +":"+ m + ":"+s+" "+session;
+            document.getElementById("MyClock").innerText=time;
+            setTimeout(showTime, 1000);
+        }
+
+        showTime();
+    </Script>
+</body>
+</html>
