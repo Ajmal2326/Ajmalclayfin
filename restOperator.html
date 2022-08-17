@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RestOperator</title>
+</head>
+<body>
+    <script>
+        function addition(string1,string2, ...args){
+           // console.log(arguments);
+           document.write(`This is first  string ${string1} and second is ${string2}`);
+            let sum=0;
+            for( let value in args)
+            {
+                sum+=args[value];
+            }
+            document.write(sum+"<br>");
+           // document.write(string1+" "+string2);
+
+        }
+        addition("Ajmal","clayfin",10,20,77);
+        addition("MSc","mathematics",30,12,11,14);
+
+
+    </script>
+</body>
+</html>

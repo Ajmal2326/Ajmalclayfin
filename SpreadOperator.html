@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spread Opeartor</title>
+</head>
+<body>
+    <script>
+        function spradfuction(s1,s2,  ...args){
+            console.log(arguments);
+
+            let sum=0;
+            for(let val in args)
+            {
+                sum+=args[val];
+            }
+
+            document.write(`${s1} ${s2}`+" "+sum)
+
+            
+        }
+        let arr=[10,20,30]
+        spradfuction("ajmal", "basha", ...arr);
+
+
+        // concat using spread oppearator
+        // let va1 =[1,2,3,4,5,0,9]
+        // let va2 =[6,7,8,9]
+
+        // let va3=[...va1, ...va2]
+        // console.log(va3);
+    </script>
+</body>
+</html>
