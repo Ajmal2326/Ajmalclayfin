@@ -1,14 +1,16 @@
-package Collection;
+package Collection.project1;
 
 public class Student 
 {
-	private int id;
 	private String name;
-	private String place;
-	public Student(int i, String string, String string2) {
-		id=i;
-		this.name=string;
-		place=string2;
+	private int id;
+	private double marks;
+	private Long number;
+	public String getName() {
+		return name;
+	}
+	public void setName(String name) {
+		this.name = name;
 	}
 	public int getId() {
 		return id;
@@ -16,25 +18,31 @@ public class Student
 	public void setId(int id) {
 		this.id = id;
 	}
-	public String getName() {
-		return name;
+	public double getMarks() {
+		return marks;
 	}
-	public void setName(String name) {
+	public void setMarks(double marks) {
+		this.marks = marks;
+	}
+	public Long getNumber() {
+		return number;
+	}
+	public void setNumber(Long number) {
+		this.number = number;
+	}
+	public Student(String name, int id, double marks, Long number) {
+		super();
 		this.name = name;
-	}
-	public String getPlace() {
-		return place;
-	}
-	public void setPlace(String place) {
-		this.place = place;
+		this.id = id;
+		this.marks = marks;
+		this.number = number;
 	}
 	@Override
 	public String toString() {
-		return "Student [id=" + id + ", name=" + name + ", place=" + place + "]";
+		return   name + "\t\t" + id + "\t\t" + marks + "\t\t" + number ;
 	}
 	
 	
 	
-	
-}
 
+}
